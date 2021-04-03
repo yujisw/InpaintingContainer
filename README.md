@@ -1,24 +1,26 @@
 # InpaintingContainer
-
+Docker Container for Image Inpainting  
+powered by https://github.com/Atlas200dk/sample-imageinpainting-HiFill
 ## ディレクトリ構成
-InpaintingContainer/  
-├── inpaint/  
-│   ├── pb/hifill.pb: 学習済みパラメータファイル  
-│   ├── Dockerfile  
-│   ├── requirements.txt  
-│   └── test.py: 推論スクリプト  
-├── inputs/  
-│   ├── imgset/: 入力画像  
-│   └── maskset/: マスク画像  
-├── results/: 出力画像  
-├── .gitignore  
-├── docker-compose.yml  
-└── README.md  
+<pre>
+.
+├── README.md
+├── docker-compose.yml
+├── inpaint
+│   ├── Dockerfile
+│   ├── pb/hifill.pb: 学習済みパラメータファイル
+│   ├── requirements.txt
+│   └── test.py: 推論スクリプト
+├── inputs
+│   ├── imgset/: 入力画像
+│   └── maskset/: マスク画像
+└── results/: 出力画像
+</pre>
 
 ## Setup Data
-- inpaint/pb/以下にhifill.pbを入れる
+- inpaint/pb/以下に[HiFillのレポジトリ](https://github.com/Atlas200dk/sample-imageinpainting-HiFill)の`GPU_CPU/pb/hifill.pb`を入れる
 - inputs/imgset/以下に入力画像を入れる
-- inputs/maskset/以下にマスク画像を入れる
+- inputs/maskset/以下に対応したマスク画像を同じファイル名で入れる
 ## Inference
 ```
 docker-compose up -d
