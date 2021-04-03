@@ -27,4 +27,4 @@ docker-compose up -d
 docker-compose exec inpaint-app bash
 python test.py
 ```
-results/以下に出力ファイルが出来上がります
+=> results/以下に出力ファイルが出来上がります
