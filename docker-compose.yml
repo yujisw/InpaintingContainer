@@ -1,0 +1,9 @@
+version: '3'
+services:
+  inpaint-app:
+    build: ./inpaint
+    volumes:
+      - ./inpaint:/home/inpaint
+      - ./inputs:/inputs
+      - ./results:/results
+    tty: true
