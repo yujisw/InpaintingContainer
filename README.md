@@ -1,6 +1,6 @@
 # InpaintingContainer
 Docker Container for Image Inpainting  
-powered by https://github.com/Atlas200dk/sample-imageinpainting-HiFill
+Powered by https://github.com/Atlas200dk/sample-imageinpainting-HiFill
 ## ディレクトリ構成
 <pre>
 .
