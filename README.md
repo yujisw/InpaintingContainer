@@ -2,18 +2,18 @@
 
 ## ディレクトリ構成
 InpaintingContainer/  
-├ inpaint/  
-│ ├ pb/hifill.pb: 学習済みパラメータファイル  
-│ ├ Dockerfile  
-│ ├ requirements.txt  
-│ └ test.py: 推論スクリプト  
-├ inputs/  
-│ ├ imgset/: 入力画像  
-│ └ maskset/: マスク画像  
-├ results/: 出力画像  
-├ .gitignore  
-├ docker-compose.yml  
-└ README.md  
+├── inpaint/  
+│   ├── pb/hifill.pb: 学習済みパラメータファイル  
+│   ├── Dockerfile  
+│   ├── requirements.txt  
+│   └── test.py: 推論スクリプト  
+├── inputs/  
+│   ├── imgset/: 入力画像  
+│   └── maskset/: マスク画像  
+├── results/: 出力画像  
+├── .gitignore  
+├── docker-compose.yml  
+└── README.md  
 
 ## Setup Data
 - inpaint/pb/以下にhifill.pbを入れる
