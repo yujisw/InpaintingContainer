@@ -18,7 +18,7 @@ Powered by https://github.com/Atlas200dk/sample-imageinpainting-HiFill
 </pre>
 
 ## Setup Data
-- inpaint/pb/以下に[HiFillのレポジトリ](https://github.com/Atlas200dk/sample-imageinpainting-HiFill)の`GPU_CPU/pb/hifill.pb`を入れる
+- ~~inpaint/pb/以下に[HiFillのレポジトリ](https://github.com/Atlas200dk/sample-imageinpainting-HiFill)の`GPU_CPU/pb/hifill.pb`を入れる~~
 - inputs/imgset/以下に入力画像を入れる
 - inputs/maskset/以下に対応したマスク画像を同じファイル名で入れる
 ## Inference
