@@ -135,16 +135,16 @@ if not os.path.exists(args.output_dir):
     os.makedirs(args.output_dir)
 print("checkpoint1")
 with tf.Graph().as_default():
-  with open('./pb/hifill.pb', "rb") as f:
-    output_graph_def = tf.GraphDef()
+  with open('/inputs/pb/hifill.pb', "rb") as f:
+    output_graph_def = tf.compat.v1.GraphDef()
     output_graph_def.ParseFromString(f.read())
-    tf.import_graph_def(output_graph_def, name="")
-    # tf.graph_util.import_graph_def(output_graph_def, name="")
+    # tf.import_graph_def(output_graph_def, name="")
+    tf.graph_util.import_graph_def(output_graph_def, name="")
 
   with tf.device('/cpu:0'):
-    with tf.Session() as sess:
-    # with tf.compat.v1.Session() as sess:
-        init = tf.global_variables_initializer()
+    # with tf.Session() as sess:
+    with tf.compat.v1.Session() as sess:
+        init = tf.compat.v1.global_variables_initializer()
         sess.run(init)
         image_ph = sess.graph.get_tensor_by_name('img:0')
         mask_ph = sess.graph.get_tensor_by_name('mask:0')

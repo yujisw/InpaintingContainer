@@ -7,3 +7,10 @@ services:
       - ./inputs:/inputs
       - ./results:/results
     tty: true
+  inpaint-app-v2:
+    build: ./inpaint_v2
+    volumes:
+      - ./inpaint_v2:/home/inpaint_v2
+      - ./inputs:/inputs
+      - ./results:/results
+    tty: true  
